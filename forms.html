@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>User Registration Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" required id="email"><br><br>
+            <label for="pass">Password:</label>
+            <input type="password" placeholder="Enter your password" id="pass"><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" placeholder="Enter your date of birth" id="dob"><br><br>
+            <label for="picture">Profile picture:</label>
+            <input type="file" placeholder="attach your picture" id="picture"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+
+         <h1>Contact Preference</h1>
+        <form>
+            <label for="about">About Me:</label>
+            <textarea placeholder="Tell us about yourself" id="about"></textarea><br><br>
+
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Contact Preferences</legend>
+                <input type="radio" name="contact" id="Email">
+                <label for="Email">Email</label>
+                <input type="radio" name="contact" id ="phone">
+                <label for="phone">Phone</label>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr><br><br>
+        <form action="https://example.com/submit" method="post" target="_blank" autocomplete="off">
+            <label for="email2">Email:</label>
+            <input type="email" placeholder="Enter your email" required id="email2">
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <hr><br><br>
+        <h1>Survey Form</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Enter your username" required maxlength="10" id="username"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter your age" min="18" max="60" id="age"><br><br>
+
+            <label for="favoriteProg">Favorite Programming Language:</label>
+            <input type="text" placeholder="Enter your favorite programming language" list="langs" id="favoriteProg"><br><br>
+            <datalist id="langs">
+                <option value="Python">
+                <option value="JavaScript">
+                <option value="Java">
+                <option value="C++">
+            </datalist>        
+            <input type="submit" value="Submit">
+
+        </form>
+
+   
+    </body>
+</html>
